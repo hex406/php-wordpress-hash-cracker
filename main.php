@@ -44,7 +44,6 @@ $query = 'select id,password from users';
 // $res = $stmt->fetch(PDO::FETCH_ASSOC);
 // var_dump($res);
 
-
 while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
     if( wp_check_password( $row['password'],$hash ) ){
         echo 'Found matching password for hash :' . $row['password']; 

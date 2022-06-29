@@ -254,7 +254,6 @@ function wp_check_password( $password, $hash, $user_id = '' ) {
     }
 
     $check = $wp_hasher->CheckPassword( $password, $hash );
-
     return $check;
     /** This filter is documented in wp-includes/pluggable.php */
     //return apply_filters( 'check_password', $check, $password, $hash, $user_id );
